@@ -20,8 +20,8 @@ Quando("informo o Assunto e Unidades que irao participar") do
     @uniforme_gerencial.preencher_unidades("TODAS")
 end
 
-Quando("informo Data Inicial {string} e Data Final {string} e clico para Salvar") do |data_inicial, data_final|
-    @uniforme_gerencial.preencher_data(data_inicial, data_final)
+Quando("informo Data Inicial e Data Final clico para Salvar") do
+    @uniforme_gerencial.preencher_data
     @uniforme_gerencial.salvar(@usuario)
 end
 

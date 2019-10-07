@@ -91,10 +91,11 @@ class UniformeGerencialPage < SitePrism::Page
 
     end
 
-    def preencher_data(data_inicial, data_final)
+    def preencher_data
 
-        @data_inicial = data_inicial
-        @data_final = data_final
+        @data_atual = Time.now
+        @data_inicial = @data_atual.strftime("%d/%m/%Y")
+        @data_final = @data_atual.strftime("%d/%m/%Y")
 
         wait_until_data_inicial_input_visible
         data_inicial_input.click.set(@data_inicial)
@@ -112,9 +113,7 @@ class UniformeGerencialPage < SitePrism::Page
 
         shot = "logs/shots/cadastro_campanha_operacional/#{usuario}/#{usuario}_antes_de_salvar_campanha_operacional.png"
         page.save_screenshot(shot)
-        binding.pry
         salvar_btn.click
-        binding.pry
 
         shot = "logs/shots/cadastro_campanha_operacional/#{usuario}/#{usuario}_depois_de_salvar_campanha_operacional.png"
         page.save_screenshot(shot)
