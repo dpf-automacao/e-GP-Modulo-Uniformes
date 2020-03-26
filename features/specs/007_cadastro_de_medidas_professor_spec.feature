@@ -34,4 +34,3 @@ Cenario: Cadastrar Medidas Professores Servidores com Sucesso
     E clico para cadastrar as medidas de professor para cinto tatico
     E clico para cadastrar as medidas de professor para Combat Shirt
     Entao eu realizo o cadastro de medidas para professores servidores com sucesso
-
