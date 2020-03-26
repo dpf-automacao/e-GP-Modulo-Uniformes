@@ -77,7 +77,6 @@ Quando("informo as medidas para gola polo e salvo e concluo") do
 end
 
 Entao("eu realizo o cadastro das medidas respectivas com sucesso") do
-
-    
+  
 
 end

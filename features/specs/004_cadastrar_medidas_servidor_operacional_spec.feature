@@ -1,7 +1,6 @@
 #language: pt
 
 @ALL
-
 Funcionalidade: Cadastrar Medidas de Servidor Operacional
 
 @cadastro_todas_medidas_operacional_sucesso
