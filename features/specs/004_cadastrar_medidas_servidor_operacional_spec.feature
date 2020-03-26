@@ -5,7 +5,6 @@
 Funcionalidade: Cadastrar Medidas de Servidor Operacional
 
 @cadastro_todas_medidas_operacional_sucesso
-@tstssssssss
 Cenario: Realizar cadastro de medidas de todos os Itens para Servidor Operacional
     Quando eu informo usuario "plinio.prpm" e senha "plinio.prpm" e clico para entrar no Menu Servidor
     E clico em Uniformes Operacional

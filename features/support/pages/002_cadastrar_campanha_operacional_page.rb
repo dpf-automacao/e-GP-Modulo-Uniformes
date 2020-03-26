@@ -94,8 +94,10 @@ class UniformeGerencialPage < SitePrism::Page
     def preencher_data
 
         @data_atual = Time.now
-        @data_inicial = @data_atual.strftime("%d/%m/%Y")
+        # @data_inicial = @data_atual.strftime("%d/%m/%Y")
         @data_final = @data_atual.strftime("%d/%m/%Y")
+        @data_inicial = "01/03/2020"
+        #@data_final = "14/10/2019"
 
         wait_until_data_inicial_input_visible
         data_inicial_input.click.set(@data_inicial)
