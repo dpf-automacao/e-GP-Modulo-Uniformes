@@ -1,4 +1,5 @@
 require 'allure-cucumber'
+require 'capybara'
 require 'capybara/cucumber'
 require 'pry'
 require 'selenium-webdriver'
@@ -32,7 +33,7 @@ end
 
 Capybara.configure do |config|
   config.default_driver = :selenium
-  config.app_host = "http://10.2.96.45:8080/sigrh"
+  config.app_host = "http://10.61.79.163:8280/sigrh"
 end
 
 Capybara.default_max_wait_time = 60

@@ -3,7 +3,8 @@ Quando("eu informo usuario {string} e senha {string} e clico para entrar no Menu
     @usuario = usuario
     @senha = senha
     @login_sigrh = LoginPage.new
-    @login_sigrh.logar_sigrh_egp(@usuario, @senha)
+    # @login_sigrh.logar_sigrh_egp(ENV['USUARIO'],ENV['SENHA'])
+    @login_sigrh.logar_sigrh_egp("plinio.prpm", "plinio.prpm")
 
 end
 

@@ -108,7 +108,6 @@ class CadastrarMedidasServidorOperacionalPage < SitePrism::Page
 
     def cadastrar_medidas_bone
 
-
         if(has_bone_concluido_img?(wait:1))
             puts "Bone ja se encontra concluido"
         else
@@ -196,7 +195,12 @@ class CadastrarMedidasServidorOperacionalPage < SitePrism::Page
 
             calca_op_img.click
 
-            cintura_habilitada_input.click.set(@cintura)
+            if(has_cintura_desabilitada_input?(wait:1))
+
+            else
+                cintura_habilitada_input.click.set(@cintura)
+            end
+
             pernas_calca_lateral_input.click.set(@pernas_lateral)
             pernas_calca_interno_input.click.set(@pernas_interno)
             quadril_calca_input.click.set(@quadril)
@@ -385,6 +389,7 @@ class CadastrarMedidasServidorOperacionalPage < SitePrism::Page
         else
             puts "Botao Salvar não se encontra na pagina atual"
         end
+        sleep(1)
     end
 
     def concluir_item(usuario, item_operacional)

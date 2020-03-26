@@ -16,18 +16,9 @@ class CadastrarCampanhaProfessoresPage < SitePrism::Page
     element :data_final_input, "input[id*='dtFinal']"
     element :salvar_btn, "input[value='Salvar']"
 
-    def cadastrar_campanha_professores
-        selecionar_vestuario_professores
-        preencher_assunto
-        preencher_data_campanha
-        salvar_campanha
-    end
-
-    def preencher_data_campanha
-        @data_inicial = "26/09/2019"
-        @data_final = "30/09/2019"
-        data_inicial_input.click.set(@data_inicial)
-        data_final_input.click.set(@data_final)
+    def preencher_data_campanha_professores(data_inicial, data_final)
+        data_inicial_input.click.set(data_inicial)
+        data_final_input.click.set(data_final)
     end
 
     def preencher_assunto
