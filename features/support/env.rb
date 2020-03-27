@@ -30,7 +30,6 @@ Capybara.register_driver :selenium do |app|
   end
 end
 
-
 Capybara.configure do |config|
   config.default_driver = :selenium
   config.app_host = "http://10.61.79.163:8280/sigrh"
