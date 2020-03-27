@@ -1,4 +1,5 @@
 Quando("clico em Uniformes Operacional") do
+    
     @menu = MenuPage.new
     @menu.entrar_uniforme_operacional_menu
     @uniforme_op = CadastrarMedidasServidorOperacionalPage.new
